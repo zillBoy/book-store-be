@@ -1,11 +1,9 @@
 const express = require('express')
+const booksRouter = require('./routes/books/books.router')
 
 const app = express()
 
-app.get('/books', (req, res) => {
-    res.status(200).json({
-        message: 'book store backend'
-    })
-})
+app.use(express.json())
+app.use('/books', booksRouter)
 
 module.exports = app
