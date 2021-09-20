@@ -2,8 +2,10 @@
   "name": "book-store-be",
   "version": "1.0.0",
   "description": "This is the backend of my fullstack (basically learning nodeJs) project",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "watch": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/zillBoy/book-store-be/issues"
   },
-  "homepage": "https://github.com/zillBoy/book-store-be#readme"
+  "homepage": "https://github.com/zillBoy/book-store-be#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
