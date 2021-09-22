@@ -1,12 +1,29 @@
-const { books, isBooksEmpty, existBookById, existBookByIsbn, addNewBook, updateBookbyId } = require('../../model/books.model')
+const { books, getBooks, isBooksEmpty, existBookById, existBookByIsbn, addNewBook, updateBookbyId, deleteBookById } = require('../../model/books.model')
+
+// Validation
+function validation(res, id) {
+    const bookExist = existBookById(Number(id))
+
+    if (isNaN(id)) return res.status(400).json({
+        error: 'Please enter correct id'
+    })
+
+    if (!id) return res.status(400).json({
+        error: 'Please provide book id in order to update book'
+    })
+
+    if (bookExist.length == 0) return res.status(404).json({
+        error: 'Book with the current id does not exist'
+    })
+}
 
 // Get All Books - Endpoint
 function httpGetAllBooks(req, res) {
-
     if (isBooksEmpty()) return res.status(400).json({
         error: 'There are currently no books'
     })
 
+    const books = getBooks()
     return res.status(200).json(books)
 }
 
@@ -49,25 +66,28 @@ function httpAddNewBook(req, res) {
 function httpUpdateBookById(req, res) {
     
     const book = req.body
-    const bookExist = existBookById(Number(book.id))
+    const bookId = req.params.id
 
-    if (!book.id) return res.status(400).json({
-        error: 'Please provide book id in order to update book'
-    })
+    validation(res, bookId)
 
-    if (bookExist.length == 0) {
-        return res.status(400).json({
-            error: 'Book with the current id does not exist'
-        })
-    }
-
-    const updatedBook = updateBookbyId(Number(book.id), book)
+    const updatedBook = updateBookbyId(Number(bookId), book)
     return res.status(200).json(updatedBook)
 }
+
+function httpDeleteBooksById(req, res) {
+    const bookId = req.params.id
+    
+    validation(res, bookId)
+
+    const deletedBook = deleteBookById(Number(bookId))
+    return res.status(200).json(deletedBook)
+}
+
 
 module.exports = {
     httpGetAllBooks,
     httpGetBookById,
     httpAddNewBook,
-    httpUpdateBookById
+    httpUpdateBookById,
+    httpDeleteBooksById
 }

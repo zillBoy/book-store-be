@@ -1,6 +1,6 @@
 const path = require('path')
 
-const books = [
+let books = [
     {
         id: 1,
         name: 'The Martian',
@@ -26,6 +26,10 @@ function isBooksEmpty() {
     : false
 }
 
+function getBooks() {
+    return books
+}
+
 function existBookById(bookId) {
     return books.filter(book => book.id === bookId)
 }
@@ -37,6 +41,7 @@ function existBookByIsbn(bookIsbn) {
 function addNewBook(book) {
     let newBook = book
     newBook.id = books.length + 1
+    newBook.status = 'published'
     books.push(newBook)
 
     return newBook
@@ -45,7 +50,7 @@ function addNewBook(book) {
 function updateBookbyId(bookId, book) {
     const { name, author, publisher, isbn, year, language, genre, page, summary } = book
 
-    let bookIndex =  books.map(book => book.id).indexOf(bookId)
+    const bookIndex =  books.map(book => book.id).indexOf(bookId)
     let newBook = existBookById(bookId)[0]
 
     if (name !== undefined) newBook.name = name
@@ -59,15 +64,24 @@ function updateBookbyId(bookId, book) {
     if (summary !== undefined) newBook.summary = summary
 
     books[bookIndex] = newBook
-    
+
     return newBook
+}
+
+function deleteBookById(bookId) {
+    const deletedBook = existBookById(bookId)[0]
+    const filteredBooks = books.filter(book => book.id !== bookId)
+    books = JSON.parse(JSON.stringify(filteredBooks))
+    return deletedBook
 }
 
 module.exports = {
     books,
+    getBooks,
     isBooksEmpty,
     existBookById,
     existBookByIsbn,
     addNewBook,
-    updateBookbyId
+    updateBookbyId,
+    deleteBookById
 }
