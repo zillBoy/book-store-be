@@ -1,4 +1,4 @@
-const { books, isBooksEmpty, existBookById, existBookByIsbn, addNewBook } = require('../../model/books.model')
+const { books, isBooksEmpty, existBookById, existBookByIsbn, addNewBook, updateBookbyId } = require('../../model/books.model')
 
 // Get All Books - Endpoint
 function httpGetAllBooks(req, res) {
@@ -44,11 +44,30 @@ function httpAddNewBook(req, res) {
     const newBook = addNewBook(book)
 
     return res.status(201).json(newBook)
+}
+
+function httpUpdateBookById(req, res) {
     
+    const book = req.body
+    const bookExist = existBookById(Number(book.id))
+
+    if (!book.id) return res.status(400).json({
+        error: 'Please provide book id in order to update book'
+    })
+
+    if (bookExist.length == 0) {
+        return res.status(400).json({
+            error: 'Book with the current id does not exist'
+        })
+    }
+
+    const updatedBook = updateBookbyId(Number(book.id), book)
+    return res.status(200).json(updatedBook)
 }
 
 module.exports = {
     httpGetAllBooks,
     httpGetBookById,
-    httpAddNewBook
+    httpAddNewBook,
+    httpUpdateBookById
 }

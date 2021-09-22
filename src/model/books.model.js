@@ -42,10 +42,32 @@ function addNewBook(book) {
     return newBook
 }
 
+function updateBookbyId(bookId, book) {
+    const { name, author, publisher, isbn, year, language, genre, page, summary } = book
+
+    let bookIndex =  books.map(book => book.id).indexOf(bookId)
+    let newBook = existBookById(bookId)[0]
+
+    if (name !== undefined) newBook.name = name
+    if (author !== undefined) newBook.author = author
+    if (publisher !== undefined) newBook.publisher = publisher
+    if (isbn !== undefined) newBook.isbn = isbn
+    if (year !== undefined) newBook.year = year
+    if (language !== undefined) newBook.language = language
+    if (genre !== undefined) newBook.genre = genre
+    if (page !== undefined) newBook.page = page
+    if (summary !== undefined) newBook.summary = summary
+
+    books[bookIndex] = newBook
+    
+    return newBook
+}
+
 module.exports = {
     books,
     isBooksEmpty,
     existBookById,
     existBookByIsbn,
-    addNewBook
+    addNewBook,
+    updateBookbyId
 }
