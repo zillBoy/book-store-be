@@ -1,5 +1,7 @@
 const path = require('path')
 
+
+
 let books = [
     {
         id: 1,
@@ -17,7 +19,160 @@ let books = [
         `,
         image: path.join(__dirname, '..', 'public', 'images', 'book1.jpg'),
         status: 'published'
-    }
+    },
+    {
+        id: 2,
+        name: 'The Martian',
+        author: 'Andy Weir',
+        publisher: 'Little, Brown Books for Young',
+        isbn: '0316480207',
+        year: '2018',
+        language: 'English',
+        genre: 'Sci-Fi',
+        page: 390,
+        summary: `Lorem ipsum dolor sit amet, consectetur adipiscing sddsas elit. Curabitur scelerisque leo augue, quis consequat ante ullamcorper vel. Duis turpis lectus, tincidunt nec ipsum sit amet, sodales tristique urna.
+            Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
+            Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
+        `,
+        image: path.join(__dirname, '..', 'public', 'images', 'book2.jpg'),
+        status: 'published',
+    },
+    {
+        id: 3,
+        name: 'The Martian',
+        author: 'Andy Weir',
+        publisher: 'Little, Brown Books for Young',
+        isbn: '0316480207',
+        year: '2018',
+        language: 'English',
+        genre: 'Sci-Fi',
+        page: 390,
+        summary: `Lorem ipsum dolor sit amet, consectetur adipiscing sddsas elit. Curabitur scelerisque leo augue, quis consequat ante ullamcorper vel. Duis turpis lectus, tincidunt nec ipsum sit amet, sodales tristique urna.
+            Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
+            Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
+        `,
+        image: path.join(__dirname, '..', 'public', 'images', 'book3.jpg'),
+        status: 'published',
+    },
+    {
+        id: 4,
+        name: 'The Martian',
+        author: 'Andy Weir',
+        publisher: 'Little, Brown Books for Young',
+        isbn: '0316480207',
+        year: '2018',
+        language: 'English',
+        genre: 'Sci-Fi',
+        page: 390,
+        summary: `Lorem ipsum dolor sit amet, consectetur adipiscing sddsas elit. Curabitur scelerisque leo augue, quis consequat ante ullamcorper vel. Duis turpis lectus, tincidunt nec ipsum sit amet, sodales tristique urna.
+            Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
+            Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
+        `,
+        image: path.join(__dirname, '..', 'public', 'images', 'book4.jpg'),
+        status: 'published',
+    },
+    {
+        id: 5,
+        name: 'The Martian',
+        author: 'Andy Weir',
+        publisher: 'Little, Brown Books for Young',
+        isbn: '0316480207',
+        year: '2018',
+        language: 'English',
+        genre: 'Sci-Fi',
+        page: 390,
+        summary: `Lorem ipsum dolor sit amet, consectetur adipiscing sddsas elit. Curabitur scelerisque leo augue, quis consequat ante ullamcorper vel. Duis turpis lectus, tincidunt nec ipsum sit amet, sodales tristique urna.
+            Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
+            Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
+        `,
+        image: path.join(__dirname, '..', 'public', 'images', 'book5.jpg'),
+        status: 'published',
+    },
+    {
+        id: 6,
+        name: 'The Martian',
+        author: 'Andy Weir',
+        publisher: 'Little, Brown Books for Young',
+        isbn: '0316480207',
+        year: '2018',
+        language: 'English',
+        genre: 'Sci-Fi',
+        page: 390,
+        summary: `Lorem ipsum dolor sit amet, consectetur adipiscing sddsas elit. Curabitur scelerisque leo augue, quis consequat ante ullamcorper vel. Duis turpis lectus, tincidunt nec ipsum sit amet, sodales tristique urna.
+            Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
+            Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
+        `,
+        image: path.join(__dirname, '..', 'public', 'images', 'book6.jpg'),
+        status: 'published',
+    },
+    {
+        id: 7,
+        name: 'The Martian',
+        author: 'Andy Weir',
+        publisher: 'Little, Brown Books for Young',
+        isbn: '0316480207',
+        year: '2018',
+        language: 'English',
+        genre: 'Sci-Fi',
+        page: 390,
+        summary: `Lorem ipsum dolor sit amet, consectetur adipiscing sddsas elit. Curabitur scelerisque leo augue, quis consequat ante ullamcorper vel. Duis turpis lectus, tincidunt nec ipsum sit amet, sodales tristique urna.
+            Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
+            Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
+        `,
+        image: path.join(__dirname, '..', 'public', 'images', 'book7.jpg'),
+        status: 'published',
+    },
+    {
+        id: 8,
+        name: 'The Martian',
+        author: 'Andy Weir',
+        publisher: 'Little, Brown Books for Young',
+        isbn: '0316480207',
+        year: '2018',
+        language: 'English',
+        genre: 'Sci-Fi',
+        page: 390,
+        summary: `Lorem ipsum dolor sit amet, consectetur adipiscing sddsas elit. Curabitur scelerisque leo augue, quis consequat ante ullamcorper vel. Duis turpis lectus, tincidunt nec ipsum sit amet, sodales tristique urna.
+            Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
+            Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
+        `,
+        image: path.join(__dirname, '..', 'public', 'images', 'book8.jpg'),
+        status: 'published',
+    },
+    {
+        id: 9,
+        name: 'The Martian',
+        author: 'Andy Weir',
+        publisher: 'Little, Brown Books for Young',
+        isbn: '0316480207',
+        year: '2018',
+        language: 'English',
+        genre: 'Sci-Fi',
+        page: 390,
+        summary: `Lorem ipsum dolor sit amet, consectetur adipiscing sddsas elit. Curabitur scelerisque leo augue, quis consequat ante ullamcorper vel. Duis turpis lectus, tincidunt nec ipsum sit amet, sodales tristique urna.
+            Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
+            Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
+        `,
+        image: path.join(__dirname, '..', 'public', 'images', 'book9.jpg'),
+        status: 'published',
+    },
+    {
+        id: 10,
+        name: 'The Martian',
+        author: 'Andy Weir',
+        publisher: 'Little, Brown Books for Young',
+        isbn: '0316480207',
+        year: '2018',
+        language: 'English',
+        genre: 'Sci-Fi',
+        page: 390,
+        summary: `Lorem ipsum dolor sit amet, consectetur adipiscing sddsas elit. Curabitur scelerisque leo augue, quis consequat ante ullamcorper vel. Duis turpis lectus, tincidunt nec ipsum sit amet, sodales tristique urna.
+            Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
+            Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
+        `,
+        image: path.join(__dirname, '..', 'public', 'images', 'book10.jpg'),
+        status: 'published',
+    },
 ]
 
 function isBooksEmpty() {
