@@ -1,4 +1,4 @@
-const { books, getBooks, isBooksEmpty, existBookById, existBookByIsbn, addNewBook, updateBookbyId, deleteBookById } = require('../../model/books.model')
+const { getBooks, isBooksEmpty, existBookById, existBookByIsbn, addNewBook, updateBookbyId, deleteBookById } = require('../../model/books.model')
 
 // Validation
 function validation(res, id) {
