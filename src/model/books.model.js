@@ -17,7 +17,7 @@ let books = [
             Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
             Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
         `,
-        image: path.join(__dirname, '..', 'public', 'images', 'book1.jpg'),
+        image: 'book1.jpg',
         status: 'published'
     },
     {
@@ -34,7 +34,7 @@ let books = [
             Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
             Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
         `,
-        image: path.join(__dirname, '..', 'public', 'images', 'book2.jpg'),
+        image: 'book2.jpg',
         status: 'published',
     },
     {
@@ -51,7 +51,7 @@ let books = [
             Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
             Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
         `,
-        image: path.join(__dirname, '..', 'public', 'images', 'book3.jpg'),
+        image: 'book3.jpg',
         status: 'published',
     },
     {
@@ -68,7 +68,7 @@ let books = [
             Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
             Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
         `,
-        image: path.join(__dirname, '..', 'public', 'images', 'book4.jpg'),
+        image: 'book4.jpg',
         status: 'published',
     },
     {
@@ -85,7 +85,7 @@ let books = [
             Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
             Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
         `,
-        image: path.join(__dirname, '..', 'public', 'images', 'book5.jpg'),
+        image: 'book5.jpg',
         status: 'published',
     },
     {
@@ -102,7 +102,7 @@ let books = [
             Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
             Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
         `,
-        image: path.join(__dirname, '..', 'public', 'images', 'book6.jpg'),
+        image: 'book6.jpg',
         status: 'published',
     },
     {
@@ -119,7 +119,7 @@ let books = [
             Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
             Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
         `,
-        image: path.join(__dirname, '..', 'public', 'images', 'book7.jpg'),
+        image: 'book7.jpg',
         status: 'published',
     },
     {
@@ -136,7 +136,7 @@ let books = [
             Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
             Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
         `,
-        image: path.join(__dirname, '..', 'public', 'images', 'book8.jpg'),
+        image: 'book8.jpg',
         status: 'published',
     },
     {
@@ -153,7 +153,7 @@ let books = [
             Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
             Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
         `,
-        image: path.join(__dirname, '..', 'public', 'images', 'book9.jpg'),
+        image: 'book9.jpg',
         status: 'published',
     },
     {
@@ -170,7 +170,7 @@ let books = [
             Aliquam venenatis nunc ut nulla interdum, ut tincidunt metus convallis. Aenean posuere ultricies feugiat. Nulla semper maximus lectus, et suscipit leo pellentesque a. Nulla ac faucibus enim. Suspendisse potenti.
             Donec non accumsan ex, quis vulputate nulla. Aenean id libero elementum, rhoncus nisi a, hendrerit odio. Phasellus arcu ante, consequat vitae aliquet at, faucibus nec mi.
         `,
-        image: path.join(__dirname, '..', 'public', 'images', 'book10.jpg'),
+        image: 'book10.jpg',
         status: 'published',
     },
 ]
