@@ -22,7 +22,7 @@ let books = [
     },
     {
         id: 2,
-        name: 'The Martian',
+        name: 'The Martian 2',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -39,7 +39,7 @@ let books = [
     },
     {
         id: 3,
-        name: 'The Martian',
+        name: 'The Martian 3',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -56,7 +56,7 @@ let books = [
     },
     {
         id: 4,
-        name: 'The Martian',
+        name: 'The Martian 4',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -73,7 +73,7 @@ let books = [
     },
     {
         id: 5,
-        name: 'The Martian',
+        name: 'The Martian 5',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -90,7 +90,7 @@ let books = [
     },
     {
         id: 6,
-        name: 'The Martian',
+        name: 'The Martian 6',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -107,7 +107,7 @@ let books = [
     },
     {
         id: 7,
-        name: 'The Martian',
+        name: 'The Martian 7',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -124,7 +124,7 @@ let books = [
     },
     {
         id: 8,
-        name: 'The Martian',
+        name: 'The Martian 8',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -141,7 +141,7 @@ let books = [
     },
     {
         id: 9,
-        name: 'The Martian',
+        name: 'The Martian 9',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -158,7 +158,7 @@ let books = [
     },
     {
         id: 10,
-        name: 'The Martian',
+        name: 'The Beauty',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
