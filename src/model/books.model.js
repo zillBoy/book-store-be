@@ -5,7 +5,7 @@ const path = require('path')
 let books = [
     {
         id: 1,
-        name: 'The Martian',
+        name: 'Fall To Earth',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -22,7 +22,7 @@ let books = [
     },
     {
         id: 2,
-        name: 'The Martian 2',
+        name: 'Waste Tide',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -39,7 +39,7 @@ let books = [
     },
     {
         id: 3,
-        name: 'The Martian 3',
+        name: 'The Martian',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -56,7 +56,7 @@ let books = [
     },
     {
         id: 4,
-        name: 'The Martian 4',
+        name: 'A Million To One',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -73,7 +73,7 @@ let books = [
     },
     {
         id: 5,
-        name: 'The Martian 5',
+        name: 'Queenie',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -90,8 +90,8 @@ let books = [
     },
     {
         id: 6,
-        name: 'The Martian 6',
-        author: 'Andy Weir',
+        name: 'Harry Potter',
+        author: 'J.K Rollin',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
         year: '2018',
@@ -107,7 +107,7 @@ let books = [
     },
     {
         id: 7,
-        name: 'The Martian 7',
+        name: 'It Ends With Us',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
@@ -124,8 +124,8 @@ let books = [
     },
     {
         id: 8,
-        name: 'The Martian 8',
-        author: 'Andy Weir',
+        name: 'Atomic Habit',
+        author: 'James Clear',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
         year: '2018',
@@ -141,7 +141,7 @@ let books = [
     },
     {
         id: 9,
-        name: 'The Martian 9',
+        name: 'The Constantine',
         author: 'Andy Weir',
         publisher: 'Little, Brown Books for Young',
         isbn: '0316480207',
