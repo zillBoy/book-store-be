@@ -38,13 +38,13 @@ function httpGetBookById(req, res) {
     return res.status(200).json(book)
 }
 
-function httpAddNewBook(req, res) { // next
+function httpAddNewBook(req, res) {
 
-    console.log('HTTP ADD BOOK CALLED')
-
-    console.log('file: ', req.file)
+    const file = req.file
 
     const book = req.body
+    book.image = file.filename
+
     const bookIsbn = book.isbn
     const bookExist = existBookByIsbn(bookIsbn)
 
@@ -67,31 +67,6 @@ function httpAddNewBook(req, res) { // next
 
     return res.status(201).json(newBook)
 }
-
-// function httpAddNewBook(req, res) {
-//     const book = req.body
-//     const bookIsbn = book.isbn
-//     const bookExist = existBookByIsbn(bookIsbn)
-
-//     if (!book.name || !book.author || !book.publisher || !book.isbn || !book.year || !book.language || !book.genre || !book.page || !book.summary || !book.image) {
-//         return res.status(400).json({
-//             error: 'Please provide all information'
-//         })
-//     }
-    
-//     if (bookExist.length !== 0) return res.status(400).json({
-//         error: 'Cannot add book, a book already exist by this isbn number'
-//     })
-
-//     if (isNaN(book.page)) return res.status(400).json({
-//         error: 'Please enter correct page value'
-//     })
-
-//     book.page = Number(book.page)
-//     const newBook = addNewBook(book)
-
-//     return res.status(201).json(newBook)
-// }
 
 function httpUpdateBookById(req, res) {
     
