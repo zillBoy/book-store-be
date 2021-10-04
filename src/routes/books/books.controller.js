@@ -73,8 +73,6 @@ function httpUpdateBookById(req, res) {
     const book = req.body
     const bookId = req.params.id
 
-    console.log('book: ', book)
-
     validation(res, bookId)
 
     const updatedBook = updateBookbyId(Number(bookId), book)
