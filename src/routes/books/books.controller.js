@@ -42,7 +42,7 @@ function httpAddNewBook(req, res) {
 
     const file = req.file
 
-    const book = req.body
+    const book = req.body    
     book.image = file.filename
 
     const bookIsbn = book.isbn
