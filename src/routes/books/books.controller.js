@@ -38,9 +38,11 @@ function httpGetBookById(req, res) {
     return res.status(200).json(book)
 }
 
-function httpAddNewBook(req, res, next) {
+function httpAddNewBook(req, res) { // next
 
-    console.log(req.file)
+    console.log('HTTP ADD BOOK CALLED')
+
+    console.log('file: ', req.file)
 
     const book = req.body
     const bookIsbn = book.isbn

@@ -4,13 +4,13 @@ const path = require('path')
 const { httpGetAllBooks, httpGetBookById, httpAddNewBook, httpUpdateBookById, httpDeleteBooksById } = require('./books.controller')
 
 const booksRouter = express.Router()
+
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, path.join(__dirname, '.', 'public', 'images', '/'))
+        cb(null, path.join(__dirname, '..', '..', 'public', 'images', '/'))
     },
     filename: function (req, file, cb) {
-        const uniqueSuffix = new Date().getTime()
-        cb(null, file.filename + '-' + uniqueSuffix)
+        cb(null, file.originalname)
     }
 })
 
