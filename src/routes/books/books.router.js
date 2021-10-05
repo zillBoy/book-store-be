@@ -1,7 +1,7 @@
 const express = require('express')
 const multer = require('multer')
 const path = require('path')
-const { httpGetAllBooks, httpGetBookById, httpAddNewBook, httpUpdateBookById, httpDeleteBooksById } = require('./books.controller')
+const { httpGetAllBooks, httpGetBookById, httpAddNewBook, httpUpdateBookById, httpUpdateBookImageById, httpDeleteBooksById } = require('./books.controller')
 
 const booksRouter = express.Router()
 
@@ -20,6 +20,7 @@ booksRouter.get('/', httpGetAllBooks)
 booksRouter.get('/:id', httpGetBookById)
 booksRouter.post('/',  upload.single('photo'), httpAddNewBook)
 booksRouter.put('/:id', httpUpdateBookById)
+booksRouter.put('/image/:id', upload.single('photo'), httpUpdateBookImageById)
 booksRouter.delete('/:id', httpDeleteBooksById)
 
 module.exports = booksRouter

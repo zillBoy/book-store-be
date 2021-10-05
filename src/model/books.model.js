@@ -223,6 +223,28 @@ function updateBookbyId(bookId, book) {
     return newBook
 }
 
+function updateBookImageById(bookId, book) {
+    const { name, author, publisher, isbn, year, language, genre, page, summary, image } = book
+
+    const bookIndex =  books.map(book => book.id).indexOf(bookId)
+    let newBook = existBookById(bookId)[0]
+
+    if (name !== undefined) newBook.name = name
+    if (author !== undefined) newBook.author = author
+    if (publisher !== undefined) newBook.publisher = publisher
+    if (isbn !== undefined) newBook.isbn = isbn
+    if (year !== undefined) newBook.year = year
+    if (language !== undefined) newBook.language = language
+    if (genre !== undefined) newBook.genre = genre
+    if (page !== undefined) newBook.page = page
+    if (summary !== undefined) newBook.summary = summary
+    if (image !== undefined) newBook.image = image
+
+    books[bookIndex] = newBook
+
+    return newBook
+}
+
 function deleteBookById(bookId) {
     const deletedBook = existBookById(bookId)[0]
     const filteredBooks = books.filter(book => book.id !== bookId)
@@ -238,5 +260,6 @@ module.exports = {
     existBookByIsbn,
     addNewBook,
     updateBookbyId,
+    updateBookImageById,
     deleteBookById
 }

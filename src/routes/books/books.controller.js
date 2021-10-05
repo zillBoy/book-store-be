@@ -1,4 +1,4 @@
-const { getBooks, isBooksEmpty, existBookById, existBookByIsbn, addNewBook, updateBookbyId, deleteBookById } = require('../../model/books.model')
+const { getBooks, isBooksEmpty, existBookById, existBookByIsbn, addNewBook, updateBookbyId, updateBookImageById, deleteBookById } = require('../../model/books.model')
 
 // Validation
 function validation(res, id) {
@@ -79,6 +79,20 @@ function httpUpdateBookById(req, res) {
     return res.status(200).json(updatedBook)
 }
 
+function httpUpdateBookImageById(req, res) {
+    
+    const file = req.file
+    const book = req.body
+    const bookId = req.params.id
+
+    book.image = file.filename
+
+    validation(res, bookId)
+
+    const updatedBook = updateBookImageById(Number(bookId), book)
+    return res.status(200).json(updatedBook)
+}
+
 function httpDeleteBooksById(req, res) {
     const bookId = req.params.id
     
@@ -88,11 +102,11 @@ function httpDeleteBooksById(req, res) {
     return res.status(200).json(deletedBook)
 }
 
-
 module.exports = {
     httpGetAllBooks,
     httpGetBookById,
     httpAddNewBook,
     httpUpdateBookById,
-    httpDeleteBooksById
+    httpDeleteBooksById,
+    httpUpdateBookImageById
 }
