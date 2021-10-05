@@ -1,7 +1,3 @@
-const path = require('path')
-
-
-
 let books = [
     {
         id: 1,
